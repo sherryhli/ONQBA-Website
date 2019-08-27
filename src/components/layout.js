@@ -1,16 +1,10 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Container, Row, Col } from 'react-grid-system';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
+import Header from './header';
+import './layout.css';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,20 +19,31 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <div className="header-desktop"><Header siteTitle="Ontario Quizbowl Association" /></div>
+      <div className="header-mobile"><Header siteTitle="ONQBA" /></div>
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
+          maxWidth: 1175,
+          padding: `0px 0rem 0rem`,
           paddingTop: 0,
+          zIndex: -1
         }}
       >
-        <main>{children}</main>
+        <main>
+          <Container>
+            <Row>
+              <Col md={9}>{children}</Col>
+              <Col md={3}><TwitterTimelineEmbed
+                sourceType="profile"
+                screenName="ontarioquizbowl"
+                options={{ height: 450 }}
+              /></Col>
+            </Row>
+          </Container>
+        </main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © Ontario Quiz Bowl Association, {new Date().getFullYear()}
         </footer>
       </div>
     </>
