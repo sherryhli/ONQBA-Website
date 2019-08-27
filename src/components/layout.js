@@ -20,30 +20,37 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="header-desktop"><Header siteTitle="Ontario Quizbowl Association" /></div>
-      <div className="header-mobile"><Header siteTitle="ONQBA" /></div>
+      <div className="header-mobile"><Header siteTitle={data.site.siteMetadata.title} /></div>
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 1175,
           padding: `0px 0rem 0rem`,
           paddingTop: 0,
-          zIndex: -1
+          zIndex: -1,
+          minHeight: `100vh`,
+          overflow: `hidden`,
+          display: `block`,
+          position: `relative`,
+          paddingBottom: `25px`
         }}
       >
         <main>
           <Container>
             <Row>
               <Col md={9}>{children}</Col>
-              <Col md={3}><TwitterTimelineEmbed
-                sourceType="profile"
-                screenName="ontarioquizbowl"
-                options={{ height: 450 }}
-              /></Col>
+              <Col md={3}>
+                <TwitterTimelineEmbed
+                  sourceType="profile"
+                  screenName="ontarioquizbowl"
+                  options={{ height: 450 }}
+                />
+              </Col>
             </Row>
           </Container>
         </main>
         <footer>
-          © Ontario Quiz Bowl Association, {new Date().getFullYear()}
+          © Ontario Quizbowl Association, {new Date().getFullYear()}
         </footer>
       </div>
     </>
