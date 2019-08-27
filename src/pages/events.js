@@ -3,6 +3,7 @@ import ReactTable from 'react-table';
 import 'react-table/react-table.css';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import './events.css';
 
 
 const EventsPage = () => {
@@ -17,19 +18,23 @@ const EventsPage = () => {
         tournament: 'University of Toronto Novice Tournament',
         location: 'Toronto, ON',
         contact: ''
-    }];
+    }
+];
 
     const columns = [{
         Header: 'Date',
-        accessor: 'date'
+        accessor: 'date',
+        width: 150
     },
     {
         Header: 'Tournament',
-        accessor: 'tournament'
+        accessor: 'tournament',
+        width: 300
     },
     {
         Header: 'Location',
-        accessor: 'location'
+        accessor: 'location',
+        width: 125
     },
     {
         Header: 'Contact',
@@ -39,6 +44,7 @@ const EventsPage = () => {
     return (
         <Layout>
             <SEO title="Events" />
+            <p>Details about upcoming tournaments can be found here:</p>
             <ReactTable
                 data={eventsData}
                 columns={columns}
