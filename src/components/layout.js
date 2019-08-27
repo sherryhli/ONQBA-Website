@@ -27,7 +27,6 @@ const Layout = ({ children }) => {
           maxWidth: 1175,
           padding: `0px 0rem 0rem`,
           paddingTop: 0,
-          zIndex: -1,
           minHeight: `100vh`,
           overflow: `hidden`,
           display: `block`,

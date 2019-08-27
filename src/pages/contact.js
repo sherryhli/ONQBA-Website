@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactContactForm from 'react-mail-form';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import './contact.css'
@@ -8,15 +7,11 @@ const ContactPage = () => {
     return (
         <Layout>
             <SEO title="Contact" />
-            <ReactContactForm
-                to="sherryhli@hotmail.com"
-                titlePlaceholder="Subject (Max 100 characters)"
-                titleMaxLength="100"
-                contentsPlaceholder="Message (Max 2500 characters)"
-                contentsMaxLength="2500"
-                buttonText="Submit"
-                className="contact-form"
-            />
+            <form action="https://formspree.io/sherryhli@hotmail.com" method="POST" id="contact-form">
+                <input type="email" name="reply-to"></input>
+                <textarea form="contact-form" name="message"></textarea>
+                <input type="submit" name="submit"></input>
+            </form>
         </Layout>
     )
 }
