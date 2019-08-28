@@ -8,14 +8,14 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <div>
       <h1 style={{ marginBlockStart: "0em", marginBlockEnd: "0em" }}>
-        Annoucements
+        Announcements
         </h1>
       <h3>{data.allMarkdownRemark.totalCount} Posts</h3>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <Link
             to={node.fields.slug}
-            style={{textDecoration: "none", color: "inherit"}}
+            style={{ textDecoration: "none", color: "inherit" }}
           >
             <h2>
               {node.frontmatter.title}{" "}
@@ -23,8 +23,8 @@ const IndexPage = ({ data }) => (
                 — {node.frontmatter.date}
               </span>
             </h2>
-            </Link>
-            <p>{node.excerpt}<Link to={node.fields.slug}>continue</Link></p>
+          </Link>
+          <p>{node.excerpt}<Link to={node.fields.slug}>continue</Link></p>
         </div>
       ))}
     </div>
