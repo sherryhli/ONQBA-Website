@@ -27,11 +27,6 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
         <span className="icon">
-          <a href="https://ontarioquizbowl.wordpress.com/">
-            <FaWordpressSimple color="white" size="20"/>
-          </a>
-        </span>
-        <span className="icon">
           <a href="https://twitter.com/ontarioquizbowl">
             <FaTwitterSquare color="white" size="20"/>
           </a>
