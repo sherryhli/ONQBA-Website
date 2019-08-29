@@ -48,6 +48,7 @@ const Header = ({ siteTitle }) => (
             <li className="nav-link"><Link to="/about" style={{ textDecoration: 'none', color: "inherit" }}>About</Link></li>
             <li className="nav-link"><Link to="/events" style={{ textDecoration: 'none', color: "inherit" }}>Events</Link></li>
             <li className="nav-link"><Link to="/contact" style={{ textDecoration: 'none', color: "inherit" }}>Contact</Link></li>
+            <li className="nav-link"><a href="https://hsquizbowl.org/db/tournaments/" style={{ textDecoration: 'none', color: "inherit" }}>Past Results</a></li>
           </ul>
         }
       />
