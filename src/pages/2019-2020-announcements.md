@@ -1,5 +1,5 @@
 ---
-title: "2019-2020 Season Annoucements"
+title: "2019-2020 Season Announcements"
 date: "2019-07-29"
 ---
 
