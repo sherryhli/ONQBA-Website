@@ -20,8 +20,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#00007A`,
-        theme_color: `#00007A`,
+        background_color: `#3e8dc1`,
+        theme_color: `#3e8dc1`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
       },
@@ -33,6 +33,18 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 650
+            },
+          },
+        ],
+      },
+    },
   ],
 }
