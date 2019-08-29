@@ -9,6 +9,8 @@
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .contact-form textarea {
@@ -17,6 +19,8 @@
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .contact-form input[type=submit] {
