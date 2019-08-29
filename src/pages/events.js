@@ -8,28 +8,49 @@ import './events.css';
 
 const EventsPage = () => {
     const eventsData = [{
-        date: 'November 9, 2019',
-        tournament: 'MacIntro IV',
-        location: 'Hamilton, ON',
-        contact: ''
+        date: 'Oct. 5, 2019',
+        tournament: 'Early Fall Tournament @ U of T',
+        difficulty: 'University*',
+        location: 'Toronto, ON',
+        contact: 'TBD'
     },
     {
-        date: 'December 7, 2019',
-        tournament: 'University of Toronto Novice Tournament',
+        date: 'Nov. 9, 2019',
+        tournament: 'Fall Quizbowl Open @ U of T',
+        difficulty: 'High School',
         location: 'Toronto, ON',
-        contact: ''
+        contact: 'TBD'
+    },
+    {
+        date: 'Nov. 16, 2019',
+        tournament: 'SCOP Novice @ Lisgar',
+        difficulty: 'High School',
+        location: 'Ottawa, ON',
+        contact: 'TBD'
+    },
+    {
+        date: 'Dec. 7, 2019',
+        tournament: 'Fall Quizbowl Open @ Carleton',
+        difficulty: 'High School',
+        location: 'Ottawa, ON',
+        contact: 'TBD'
     }
 ];
 
     const columns = [{
         Header: 'Date',
         accessor: 'date',
-        width: 150
+        width: 100
     },
     {
         Header: 'Tournament',
         accessor: 'tournament',
-        width: 300
+        width: 250
+    },
+    {
+        Header: 'Difficulty',
+        accessor: 'difficulty',
+        width: 125
     },
     {
         Header: 'Location',
@@ -51,6 +72,7 @@ const EventsPage = () => {
                 defaultPageSize={eventsData.length}
                 showPagination={false}
             />
+            <p>* This is a collegiate level tournament that is open to both high school and university teams.</p>
         </Layout>
     )
 }
