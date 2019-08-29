@@ -47,8 +47,7 @@ const AboutPage = () => (
     <article id="quizbowl-reach-difference">
       <h2>What's the difference between Quizbowl and Reach for the Top?</h2>
       <p>Both quizbowl and Reach for the Top are played by high school teams on buzzers, answering questions on various subjects to score points. Lots of teams in Ontario play both games.</p>
-      <p>However, the two differ in that quizbowl is more challenging and more competitive than Reach for the Top, and it encourages some deeper learning.</p>
-      <p>On the other hand, Reach is a faster game, and often includes one-clue questions and spelling questions, so it is usually preferred by casual players and junior players. Quizbowl has more questions about topics like science and literature, so it is often preferred by strong students and readers.</p>
+      <p>Comparing the two, Reach is a faster game, and often includes one-clue questions and spelling questions, so it is usually preferred by casual players and junior players. Quizbowl has more questions about topics like science and literature, so it is often preferred by strong students and readers.</p>
       <p>In Ontario, quizbowl and Reach for the Top both ask many questions on Canadian topics. Historically, quizbowl has been played on American questions, but now, we always arrange to swap extra Canada questions into every round of quizbowl. Reach for the Top probably still has more Canadian content in total.</p>
     </article>
     <article id="quizbowl-ihbb-difference">
