@@ -6,7 +6,6 @@ import { MdMenu } from "react-icons/md";
 import { MdClose } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
-import { FaWordpressSimple } from "react-icons/fa";
 import './header.css';
 
 const Header = ({ siteTitle }) => (
