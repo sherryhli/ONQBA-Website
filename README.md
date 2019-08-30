@@ -35,7 +35,6 @@ When the site is ready to be deployed, we first reset [OntarioQuizbowl/ontarioqu
 
 ```
 git reset --hard [commit-hash-here]
-git push -f
 ```
 
 We now sync the fork to the upstream branch:
@@ -43,6 +42,7 @@ We now sync the fork to the upstream branch:
 ```
 git fetch upstream master
 git merge upstream/master
+git push -f
 ```
 
 Now the two repositories are identical.
@@ -52,4 +52,4 @@ Run the following in [OntarioQuizbowl/ontarioquizbowl.github.io](https://github.
 npm run deploy
 ```
 
-This creates a production build of the site and overwrites [OntarioQuizbowl/ontarioquizbowl.github.io](https://github.com/OntarioQuizbowl/ontarioquizbowl.github.io)'s `master` branch with the contents of the `public` directory. GitHub pages automatically deploys the latest changes to https://ontarioquizbowl.github.io.
+This creates a production build of the site and overwrites [OntarioQuizbowl/ontarioquizbowl.github.io](https://github.com/OntarioQuizbowl/ontarioquizbowl.github.io)'s `master` branch with the contents of the `public` directory. The deploy script also creates a `CNAME` file containing "onqba.ca" inside `public`. GitHub pages automatically deploys the latest changes to https://ontarioquizbowl.github.io, which has the custom domain https://onqba.ca.
