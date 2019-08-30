@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => (
               </span>
             </h2>
           </Link>
-          <p>{node.excerpt}<Link to={node.fields.slug}>continue</Link></p>
+          <p>{node.excerpt} <Link to={node.fields.slug}>view entire post</Link></p>
         </div>
       ))}
     </div>
