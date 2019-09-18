@@ -12,14 +12,14 @@ const EventsPage = () => {
         tournament: 'Early Fall Tournament @ U of T',
         difficulty: 'University*',
         location: 'Toronto, ON',
-        contact: 'TBD'
+        contact: 'cwasims [at] gmail.com'
     },
     {
         date: 'Nov. 9, 2019',
         tournament: 'Fall Quizbowl Open @ U of T',
         difficulty: 'High School',
         location: 'Toronto, ON',
-        contact: 'TBD'
+        contact: 'meghan.torchia [at] mail.utoronto.ca'
     },
     {
         date: 'Nov. 16, 2019',
@@ -33,7 +33,7 @@ const EventsPage = () => {
         tournament: 'Fall Quizbowl Open @ Carleton',
         difficulty: 'High School',
         location: 'Ottawa, ON',
-        contact: 'TBD'
+        contact: 'meghan.torchia [at] mail.utoronto.ca'
     }
 ];
 
@@ -50,16 +50,17 @@ const EventsPage = () => {
     {
         Header: 'Difficulty',
         accessor: 'difficulty',
-        width: 125
+        width: 100
     },
     {
         Header: 'Location',
         accessor: 'location',
-        width: 125
+        width: 100
     },
     {
         Header: 'Contact',
-        accessor: 'contact'
+        accessor: 'contact',
+        className: 'contact-column'
     }
     ]
     return (

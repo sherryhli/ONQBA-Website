@@ -9,3 +9,8 @@
 .ReactTable {
     text-align: center;
 }
+
+.ReactTable .rt-td {
+    white-space: unset;
+    word-wrap: break-word;
+}
