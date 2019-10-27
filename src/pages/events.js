@@ -19,7 +19,7 @@ const EventsPage = () => {
         tournament: 'Fall Quizbowl Open @ U of T',
         difficulty: 'High School',
         location: 'Toronto, ON',
-        contact: 'meghan.torchia [at] mail.utoronto.ca'
+        contact: 'rmz.chen [at] mail.utoronto.ca'
     },
     {
         date: 'Nov. 16, 2019',
