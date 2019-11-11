@@ -8,7 +8,7 @@ We are pleased to announce the new executive team and new membership rules in pr
 ## The 2019-2020 ONQBA executive team:
 
 * President - Meghan Torchia
-* Treasurer - Joe Su
+* Treasurer - Aaron Dos Remedios
 * Secretary - Raymond Chen
 * Webmaster - Sherry Li
 

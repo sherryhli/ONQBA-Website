@@ -17,14 +17,13 @@ const IndexPage = ({ data }) => (
             to={node.fields.slug}
             style={{ textDecoration: "none", color: "inherit" }}
           >
-            <h2>
-              {node.frontmatter.title}{" "}
-              <span>
-                — {node.frontmatter.date}
-              </span>
-            </h2>
+            <h1 style={{marginBottom: '-0.5em'}}>
+              {node.frontmatter.title}
+            </h1>
+           <p style={{fontWeight: 'bold'}}>{node.frontmatter.date}</p>
           </Link>
-          <p>{node.excerpt} <Link to={node.fields.slug}>view entire post</Link></p>
+          <div dangerouslySetInnerHTML={{ __html: node.html }} />
+          <hr style={{borderStyle: 'dashed', borderColor: '#C3C3C3'}}></hr>
         </div>
       ))}
     </div>
@@ -47,6 +46,7 @@ export const query = graphql`
           }
           excerpt(pruneLength: 500)
           timeToRead
+          html
         }
       }
     }
